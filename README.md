@@ -17,6 +17,9 @@
 
 # Testando o projeto ⛏
 
+1º Passo: Executar o projeto;
+2º Passo: Efetuar os devidos via  browser.
+
 - Página inicial: https://localhost:7239/Instituicao > considerando a porta atribuida
 
 -![pagina inicial](https://user-images.githubusercontent.com/72419533/155344866-0eaa1845-bdff-4227-b9c8-664fbc8e01b8.PNG)
