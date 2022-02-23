@@ -53,7 +53,7 @@
 
 ## Nota:
 
-Os dados não estão sendo persistindo em num banco de dados, logo a casa restart da aplicação os dados gerados pela interação no front-end serão perdidos.
+Os dados não estão sendo persistidos em um banco de dados, logo a cada restart da aplicação,  os dados gerados pela interação no front-end serão perdidos.
 
 # Repositório criado para fins de estudo 📓
 
