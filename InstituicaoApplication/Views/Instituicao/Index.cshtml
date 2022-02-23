@@ -1,45 +1,41 @@
 ﻿<!-- Define o que a visão recebe e será definido como modelo para ela -->
 @model IEnumerable<InstituicaoApplication.Models.Instituicao>
-<!-- https://localhost:7239/Instituicao/Index -->
 
 @{
     Layout = null;
 }
+
 <!DOCTYPE html>
+
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>Home</title>
 </head>
 <body>
 <p>
-    <a asp-action="Create">Create New</a> <!-- uso da Tag Helper (asp-action) para que seja renderizado
-    um código HTML que representa um link para uma action--> 
+    <a asp-action="Create">Criar nova instituição</a>
 </p>
 <table class="table">
     <thead>
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.InstituicaoID) <!--faz uso de um HTML Helper
-             ( DisplayNameFor() ) para a definição do título da coluna de  dados (da tabela que está sendo renderizada). -->
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Nome)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Endereco)
-        </th>
-        <th></th>
-    </tr>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.InstituicaoID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Endereco)
+                </th>
+            <th></th>
+        </tr>
     </thead>
     <tbody>
-    @foreach (var item in Model) { <!-- uso de um foreach para renderização das linhas da tabela, que representarão as
-      instituições recebidas pela visão. -->
+@foreach (var item in Model) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.InstituicaoID)
-                <!-- exibirá o conteúdo das propriedades
-                     de cada objeto recebido como modelo de dados para a visão.-->
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Nome)
@@ -48,12 +44,12 @@
                 @Html.DisplayFor(modelItem => item.Endereco)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.InstituicaoID }) |
-                @Html.ActionLink("Details", "Details", new { id=item.InstituicaoID }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.InstituicaoID })
+                @Html.ActionLink("Edit", "Edit", new { id = item.InstituicaoID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.InstituicaoID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.InstituicaoID })
             </td>
         </tr>
-    }
+}
     </tbody>
 </table>
 </body>
