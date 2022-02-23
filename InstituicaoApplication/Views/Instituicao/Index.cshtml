@@ -1,4 +1,6 @@
-﻿@model IEnumerable<InstituicaoApplication.Models.Instituicao>
+﻿<!-- Define o que a visão recebe e será definido como modelo para ela -->
+@model IEnumerable<InstituicaoApplication.Models.Instituicao>
+<!-- https://localhost:7239/Instituicao/Index -->
 
 @{
     Layout = null;
@@ -11,13 +13,15 @@
 </head>
 <body>
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Create New</a> <!-- uso da Tag Helper (asp-action) para que seja renderizado
+    um código HTML que representa um link para uma action--> 
 </p>
 <table class="table">
     <thead>
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.InstituicaoID)
+            @Html.DisplayNameFor(model => model.InstituicaoID) <!--faz uso de um HTML Helper
+             ( DisplayNameFor() ) para a definição do título da coluna de  dados (da tabela que está sendo renderizada). -->
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Nome)
@@ -29,10 +33,13 @@
     </tr>
     </thead>
     <tbody>
-    @foreach (var item in Model) {
+    @foreach (var item in Model) { <!-- uso de um foreach para renderização das linhas da tabela, que representarão as
+      instituições recebidas pela visão. -->
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.InstituicaoID)
+                <!-- exibirá o conteúdo das propriedades
+                     de cada objeto recebido como modelo de dados para a visão.-->
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Nome)
