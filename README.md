@@ -51,7 +51,9 @@
 
 ![delete](https://user-images.githubusercontent.com/72419533/155345321-61c16f7f-2761-42fe-8b8f-bf901a3eb6e2.PNG)
 
-## Nota: Os dados não estão sendo persistindo em num banco de dados, logo a casa restart da aplicação os dados gerados pela interação no front-end serão perdidos.
+## Nota:
+
+Os dados não estão sendo persistindo em num banco de dados, logo a casa restart da aplicação os dados gerados pela interação no front-end serão perdidos.
 
 # Repositório criado para fins de estudo 📓
 
