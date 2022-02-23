@@ -18,6 +18,7 @@
 # Testando o projeto ⛏
 
 1º Passo: Executar o projeto;
+
 2º Passo: Efetuar os devidos via  browser.
 
 - Página inicial: https://localhost:7239/Instituicao > considerando a porta atribuida
