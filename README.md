@@ -1,6 +1,7 @@
 # Objetivos 🎯
-- Criar uma API para gerenciar tarefas, do tipo to do list.
-- Criar Web API com ASP.NET Core MVC.
+- Criar uma API com ASP.NET Core MVC para gerenciar uma instituição;
+- Trabalhar com controllers, actions, views, razor e roteamento;
+- Trabalhar com uma aplicação CRUD.
 
 # Regras de negócio 🎯
 
